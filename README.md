@@ -1,7 +1,8 @@
 
-# Simple HTML, SCSS, GULP4 and BrowserSync portfolio site
+# Portfolio
 
-Feel free to clone this project if you like
+This is my one page static site for listing frontend work I did.
+Live version: [alextseitlin.github.io](alextseitlin.github.io)
 
 ## To Run the Project
 After you clone this project you may try to install all dependencies using 
@@ -21,7 +22,3 @@ or just compile the scss
 ```
 $ gulp style
 ```
-
-# Author 
-[Alex Tseitlin](https://github.com/alextseitlin)
-
