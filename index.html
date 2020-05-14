@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="library/css/styles.css">
+  <!--build:js /main.min.js -->
+  <script src="node_modules/aos/dist/aos.js"></script>
+  <script src="library/js/main1.js"></script>
+  <!-- endbuild -->
+
   <title>Document</title>
 </head>
 
@@ -49,95 +54,102 @@
       </div>
     </section>
 
-    <section class="projects bg-secondary py-5">
-      <h2 class="text-center">Portfolio</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 project">
-            <div class="project__wrapper">
-              <div class="col-12">
-                <img src="library/img/english.jpg" alt="" class="w-100">
-              </div>
 
-              <div class="col-12">
-                <h2 class="project__title">English school landing page</h2>
+    <section class="bg-square">
 
-                <div class="project__badges">
-                  <div>
-                    <span>My part:</span>
-                    <span class="badge badge-secondary">Design</span>
-                    <span class="badge badge-secondary">Code</span>
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-5 py-5 pr-5 d-flex align-items-center">
+                <div>
+                  <h2>English school landing page</h2>
+
+                  <div class="my-4">
+                    <div>
+                      <span>My part:</span>
+                      <span class="badge badge-secondary">Design</span>
+                      <span class="badge badge-secondary">Code</span>
+                    </div>
+
+                    <div>
+                      <span>What I used:</span>
+                      <span class="badge badge-secondary">html</span>
+                      <span class="badge badge-secondary">pug</span>
+                      <span class="badge badge-secondary">scss</span>
+                      <span class="badge badge-secondary">gulp</span>
+                      <span class="badge badge-secondary">bootstrap</span>
+                      <span class="badge badge-secondary">GIT</span>
+                    </div>
                   </div>
 
-                  <div>
-                    <span>What I used:</span>
-                    <span class="badge badge-secondary">html</span>
-                    <span class="badge badge-secondary">pug</span>
-                    <span class="badge badge-secondary">scss</span>
-                    <span class="badge badge-secondary">gulp</span>
-                    <span class="badge badge-secondary">bootstrap</span>
-                    <span class="badge badge-secondary">GIT</span>
-                  </div>
-                </div>
-
-                <p class="project__description">
-                  A landing page for an online English teaching school. The task was to Create
+                  <p>A landing page for an online English teaching school. The task was to Create
                   an easy to use page that will be used to get new clients
-                </p>
-                <div class="project__buttons">
-                  <!-- <a href="#" class="btn btn-secondary">Code on github</a> -->
-                  <a href="http://englishlevelup.ru/" class="btn btn-primary">View live version</a>
+                  </p>
+                  <a href="https://englishlevelup.ru/" class="btn btn-primary">Visit site</a>
+
                 </div>
+              </div>
+              <div class="col-md-7 py-5 d-flex align-items-center">
+                <div class="shadow-sm rounded-lg overflow-hidden">
+                  <div style="background:purple;width:100%;height:100%">
+                    <img src="library/img/english.jpg" alt="" class="w-100">
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 project">
-            <div class="project__wrapper">
-              <div class="col-12">
-                <img src="library/img/tati.jpg" alt="" class="w-100">
+        </section>
+
+        <section class="bg-square bg-square--right">
+
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-5 py-5 pl-5 d-flex align-items-center order-2">
+                <div>
+                  <h2>Tati Frank photography</h2>
+
+                  <div class="my-4">
+                    <div>
+                      <span>My part:</span>
+                      <span class="badge badge-secondary">Design</span>
+                      <span class="badge badge-secondary">Code</span>
+                    </div>
+
+                    <div>
+                      <span>What I used:</span>
+                      <span class="badge badge-secondary">php</span>
+                      <span class="badge badge-secondary">wordpress</span>
+                      <span class="badge badge-secondary">html</span>
+                      <span class="badge badge-secondary">scss</span>
+                      <span class="badge badge-secondary">gulp</span>
+                      <span class="badge badge-secondary">bootstrap</span>
+                      <span class="badge badge-secondary">GIT</span>
+                    </div>
+                  </div>
+
+                  <p>A custom made theme for wordpress using scss/bootstrap build on gulp.
+                  I did the design, coding and integration to wordpress.
+                  </p>
+                  <a href="https\\:www.tatifrank.com" class="btn btn-primary">Visit site</a>
+
+                </div>
               </div>
 
-              <div class="col-12">
-                <h2 class="project__title">Tati Frank photography</h2>
-
-                <div class="project__badges">
-                  <div>
-                    <span>My part:</span>
-                    <span class="badge badge-secondary">Design</span>
-                    <span class="badge badge-secondary">Code</span>
-                  </div>
-
-                  <div>
-                    <span>What I used:</span>
-                    <span class="badge badge-secondary">php</span>
-                    <span class="badge badge-secondary">wordpress</span>
-                    <span class="badge badge-secondary">html</span>
-                    <span class="badge badge-secondary">scss</span>
-                    <span class="badge badge-secondary">gulp</span>
-                    <span class="badge badge-secondary">bootstrap</span>
-                    <span class="badge badge-secondary">GIT</span>
+              <div class="col-md-7 py-5 d-flex align-items-center order-1">
+                <div class="shadow-sm rounded-lg overflow-hidden">
+                  <div style="background:purple;width:100%;height:100%">
+                    <img src="library/img/tati.jpg" alt="" class="w-100">
                   </div>
                 </div>
 
-                <p class="project__description">
-                  <!-- <b>Task:</b> Create a portfolio site for wedding photography. SEO optimisation and coding.
-                  o build a quality website to showcase your photography portfolio
-                  </p> -->
-                  <p class="project__description">
-                    A custom made theme for wordpress using scss/bootstrap build on gulp.
-                    I did the design, coding and integration to wordpress.
-                </p>
-                <div class="project__buttons">
-                  <!-- <a href="#" class="btn btn-secondary">Code on github</a> -->
-                  <a href="https://www.tatifrank.com" class="btn btn-primary">View live version</a>
-                </div>
               </div>
             </div>
           </div>
-        </div>
 
-    </section>
+        </section>
 
 
   </main>

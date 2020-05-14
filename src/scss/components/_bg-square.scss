@@ -1,0 +1,28 @@
+.bg-square {
+  // @extend .py-5;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  // min-height: 100vh;
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $indigo-ultralight;
+  }
+
+  @media (min-width: 768px) {
+    &::before {
+      width: 60%;
+    }
+
+    &--right {
+      &::before {
+        right: 0;
+      }
+    }
+  }
+}

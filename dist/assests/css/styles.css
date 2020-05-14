@@ -6,6 +6,7 @@ Import core bootstrap files with our local variables
   --blue: #007bff;
   --indigo: #2D06C7;
   --indigo-light: #EAE8FA;
+  --indigo-ultralight: #F6F8FC;
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
@@ -7155,3 +7156,20 @@ Custom components
   background: #fff;
   border-radius: 0.3rem;
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.06); }
+
+.bg-square {
+  position: relative;
+  display: flex;
+  align-items: center; }
+  .bg-square::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #F6F8FC; }
+  @media (min-width: 768px) {
+    .bg-square::before {
+      width: 60%; }
+    .bg-square--right::before {
+      right: 0; } }
