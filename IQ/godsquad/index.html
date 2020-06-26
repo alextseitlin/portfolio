@@ -14,6 +14,105 @@
 
 
   <style>
+/*!
+ * Bootstrap Grid v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px; } }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
+
+@media (min-width: 768px) {
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; } }
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
+
+/*# sourceMappingURL=bootstrap-grid.css.map */
 h1.title,
 h2.title,
 h3.title,
@@ -299,7 +398,6 @@ a[disabled] {
 @media only screen and (max-width: 600px) {
   .MemberJoin .headerSection {
     min-height: 600px;
-    text-align: left;
     background-image: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/DEW-Final%20-%20Ryan%20Ward-Williams%20(1).jpg"); }
   .MemberJoin .headerSection .title {
     font-size: 48px; }
@@ -366,9 +464,7 @@ a[disabled] {
   .MemberJoin .aboutSection > .title {
     margin-bottom: 24px; }
   .MemberJoin .aboutSection .title {
-    font-size: 30px; }
-  .MemberJoin .aboutSection .subtitle {
-    font-size: 22px; } }
+    font-size: 30px; } }
 
 .MemberJoin .benefitsSection {
   /* background: #2e426d; */
@@ -549,7 +645,8 @@ a[disabled] {
   .MemberJoin .applySection .right {
     margin-top: 32px; }
   .MemberJoin .applySection .title {
-    font-size: 34px; } }
+    font-size: 34px;
+    text-align: center; } }
 
 .MemberJoin .fbSection {
   display: none;
@@ -667,29 +764,37 @@ a[disabled] {
 
 
       <section class="aboutSection">
-        <h2 class="title">About the Program</h2>
-        <div class="left">
-          <div class="message">
-            <div class="message-body">
-              <h3 class="subtitle">
-                Godsquad Elite is a specially-curated group of our top customers, influencers, and friends of our brand who share a common passion for excellence in skincare, paired with an affinity for manifestation and the power of positive
-                thought.
-              </h3>
-              <div class="description">We're excited to welcome you to our inclusively-exclusive club that we've custom-built to provide you with early access to new products, exclusive invites to events and meetups, and one-on-one conversations with
-                our team and our founder to build a more inclusive, responsive brand.</div>
+        <div class="container">
+          <h2 class="title">Squad Goals.</h2>
 
-            </div>
-            <div class="applyBox message-body">
-              <div class="title">Apply to Join</div>
-              <div class="subtitle">It only takes a few minutes, and helps us identify if you're a good fit for Godsquad Elite</div>
-              <a href="#apply">
-                <div class="Button btn primary round">
-                  <div class="label">Learn More</div>
+          <div class="row"> 
+            <div class="col-md-8 col-lg-6">
+              <!-- <div class="left"> -->
+                <div class="message">
+                  <div class="message-body">
+                    <h3 class="subtitle">
+                      Godsquad Elite is a specially-curated group of our top customers, influencers, and friends of our brand who share a common passion for excellence in skincare, paired with an affinity for manifestation and the power of positive
+                      thought.
+                    </h3>
+                    <div class="description">We're excited to welcome you to our inclusively-exclusive club that we've custom-built to provide you with early access to new products, exclusive invites to events and meetups, and one-on-one conversations with
+                      our team and our founder to build a more inclusive, responsive brand.</div>
+
+                  </div>
+                  <div class="applyBox message-body">
+                    <div class="title">Apply to Join</div>
+                    <div class="subtitle">It only takes a few minutes, and helps us identify if you're a good fit for Godsquad Elite</div>
+                    <a href="#apply">
+                      <div class="Button btn primary round">
+                        <div class="label">Learn More</div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </a>
+              <!-- </div> -->
             </div>
           </div>
         </div>
+
       </section>
 
 
@@ -746,7 +851,7 @@ a[disabled] {
             <div class="icon icon-lg">
               <i class="fas fa-check"></i>
             </div>
-            <div class="itemText">Exclusive pre-purchase options for new products</div>
+            <div class="itemText">Exclusive pre-purchase options for new products.</div>
           </div>
           <div class="listItem">
             <div class="icon icon-lg">
@@ -798,7 +903,7 @@ a[disabled] {
           <div>
             <h2 class="title">Let's party.</h2>
             <div class="description">We're excited to welcome you to the Godsquad Elite. A member of our team will review your application and get back to you as soon as possible. If you have questions in the mean time, feel free to email us at
-              hello@dew.co.``
+              <a href="mailto:hello@dew.co">hello@dew.co</a>.
             </div>
             <img class="img" src="https://storage.googleapis.com/aspirex-program-onboarding/godsquad/photo1%20-%20Ryan%20Ward-Williams%20(1).jpg" />
           </div>
@@ -834,6 +939,36 @@ a[disabled] {
     var redirectUrl = baseUrl + '/join/' + lastSegment + '/thankyou'; // change this to the url you want redirected to.
 
     iframe.setAttribute('src', baseUrl + '/onboarding_form/' + lastSegment + window.location.search + '&redirectUri=' + redirectUrl);
+  </script>
+
+  <script>
+
+  function anchorLinkHandler(e) {
+      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+
+      e.preventDefault();
+      const targetID = this.getAttribute("href");
+      const targetAnchor = document.querySelector(targetID);
+      if (!targetAnchor) return;
+      const originalTop = distanceToTop(targetAnchor);
+
+      window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
+
+      const checkIfDone = setInterval(function() {
+          const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+          if (distanceToTop(targetAnchor) === 0 || atBottom) {
+              targetAnchor.tabIndex = "-1";
+              targetAnchor.focus();
+              window.history.pushState("", "", targetID);
+              clearInterval(checkIfDone);
+          }
+      }, 1000);
+  }
+
+  const linksToAnchors = document.querySelectorAll('a[href^="#"]');
+
+  linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+
   </script>
 </body>
 
