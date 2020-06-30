@@ -435,6 +435,7 @@ a[disabled] {
   z-index: -1; }
 
 .MemberJoin .headerSection .btn {
+  font-family: quicksand, sans-serif;
   height: 60px;
   min-width: 234px;
   font-size: 18px;
@@ -444,6 +445,8 @@ a[disabled] {
   border-radius: 8px;
   font-size: 18px;
   background: #ebb9c424; }
+  .MemberJoin .headerSection .btn .label {
+    margin-top: -4px; }
 
 .MemberJoin .headerSection .btn:hover {
   height: 60px;
@@ -615,6 +618,10 @@ a[disabled] {
 .MemberJoin .benefitsSection .left .listItem .icon * {
   fill: #7fd4f4 !important; }
 
+.MemberJoin .benefitsSection .right .listItem .icon,
+.MemberJoin .benefitsSection .left .listItem .icon {
+  margin-top: 5px; }
+
 .MemberJoin .benefitsSection .left .listItem .text {
   -webkit-box-flex: 1;
   flex: 1; }
@@ -735,8 +742,10 @@ a[disabled] {
   .MemberJoin .applySection .right {
     margin-top: 32px; }
   .MemberJoin .applySection .title {
-    font-size: 34px;
     text-align: center; } }
+
+.MemberJoin .applySection .title {
+  font-size: 34px; }
 
 .MemberJoin .fbSection {
   display: none;
@@ -842,14 +851,13 @@ a[disabled] {
 
 .fa-drop:before {
   content: url(https://storage.googleapis.com/aspirex-program-onboarding/godsquad/drop--black.png);
-  transform: scale(0.6);
-  display: block;
-  margin-top: -2px; }
+  transform: scale(0.4);
+  display: block; }
 
 </style>
 </head>
 
-
+ 
 <body>
   <main class="content">
     <div class="MemberJoin">
@@ -909,7 +917,7 @@ a[disabled] {
             <div class="description">They're a special breed. Does this sound like you?</div>
             <div class="listItem">
               <div class="icon">
-                <i class="fas fa-fw fa-2x fa-heart"></i>
+                <i class="fas fa-fw fa-1x fa-heart"></i>
               </div>
               <div class="text">
                 <div class="header">Passionate about skincare</div>
@@ -918,7 +926,7 @@ a[disabled] {
             </div>
             <div class="listItem">
               <div class="icon">
-                <i class="fas fa-fw fa-2x fa-thumbs-up"></i>
+                <i class="fas fa-fw fa-1x fa-thumbs-up"></i>
               </div>
               <div class="text">
                 <div class="header">Loud on social</div>
@@ -927,7 +935,7 @@ a[disabled] {
             </div>
             <div class="listItem">
               <div class="icon">
-                <i class="fas fa-fw fa-2x fa-star"></i>
+                <i class="fas fa-fw fa-1x fa-star"></i>
               </div>
               <div class="text">
                 <div class="header">Down to try new products</div>
@@ -936,7 +944,7 @@ a[disabled] {
             </div>
             <div class="listItem">
               <div class="icon">
-                <i class="fas fa-fw fa-2x fa-smile"></i>
+                <i class="fas fa-fw fa-1x fa-smile"></i>
               </div>
               <div class="text">
                 <div class="header">A passion enthusiast</div>
@@ -990,7 +998,7 @@ a[disabled] {
               <div class="itemText">
                 A seat on our GS Focus Group to help influence future products, promotions and marketing plans.
               </div>
-            </div>     
+            </div>
             <div class="listItem">
               <div class="icon icon-lg">
                 <i class="fas fa-drop"></i>
@@ -1011,8 +1019,6 @@ a[disabled] {
             <div class="col-lg-6">
               <div>
                 <h2 class="title">Let's party.</h2>
-                <div class="row">
-                  <div class="col-10 col-lg-12">
 
                     <div class="description">
                       We're excited to welcome you to the Godsquad Elite.
@@ -1021,12 +1027,8 @@ a[disabled] {
                       questions in the mean time, feel free to email us at
                       <a href="mailto:hello@dew.co">hello@dew.co</a>.
                     </div>
-                  </div>
-                  <div class="col-12">
 
                     <img class="img w-100 mt-3" src="https://storage.googleapis.com/aspirex-program-onboarding/godsquad/photo1%20-%20Ryan%20Ward-Williams%20(1).jpg" />
-                  </div>
-                </div>
               </div>
 
             </div>
@@ -1057,7 +1059,7 @@ a[disabled] {
           </div>
         </div>
       </div>
-      <div class="copyrightSection">Copyright <span style="font-family: quicksand, sans-serif;">©</span> 2020 Dew Beauty Inc.</div>
+      <div class="copyrightSection">Copyright <span style="font-family: quicksand, sans-serif;">©</span> 2020 Dew Beauty Inc</div>
     </div>
   </main>
   <script src="https://kit.fontawesome.com/9dd1dcdbe8.js" crossorigin="anonymous"></script>
