@@ -1,0 +1,26 @@
+.cover-hero {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-top: $size-4;
+  padding-bottom: $size-6;
+
+  &__content {
+    display: flex;
+    height: 92vh;
+    justify-content: space-between;
+    align-items: initial;
+    flex-direction: column;
+
+    &-lead {
+      @extend .display-4;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding-bottom: $size-4;
+      color: $white;
+
+      b {
+        font-weight: 500;
+      }
+    }
+  }
+}

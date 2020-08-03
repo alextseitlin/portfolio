@@ -1,0 +1,31 @@
+.c-feature-blocks {
+  &__block {
+    padding: $size-4;
+    text-align: center;
+
+    &-icon {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 20px;
+        width: 5px;
+        -webkit-mask: url("/assest/img/icon/water-teatment.svg") no-repeat 50% 50%;
+        mask: url("/assest/img/icon/water-teatment.svg") no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        background-color: $primary;
+      }
+    }
+
+    &:hover {
+      @extend .shadow;
+      background: $white;
+      color: $red;
+    }
+  }
+}

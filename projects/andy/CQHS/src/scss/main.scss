@@ -2,27 +2,25 @@
 
 // COMPONENTS
 @import "component/sizes";
+@import "component/type";
+@import "component/btn";
+@import "component/form";
 @import "component/nav";
-@import "component/dropdown"; 
+@import "component/dropdown";
 @import "component/bg";
+@import "component/card";
 @import "component/footer";
+@import "component/cover-hero";
+@import "component/feature-blocks";
 
-.cover-hero {
-  background-repeat: no-repeat;
-      background-position: bottom center;
-      padding-top: $size-4;
-      padding-bottom: $size-6;
 
-  &__content {
-    display: flex;
-    height: 92vh;
-    justify-content: space-between;
-    align-items: initial;
-    flex-direction: column;
 
-    &-lead {
-      text-transform: uppercase;
-      padding-bottom: $size-4;
-    }
-  }
+.link-secondary {
+  color: $red;
+  font-weight: $font-weight-bold;
+}
+
+
+.large {
+  font-size: 22px;
 }

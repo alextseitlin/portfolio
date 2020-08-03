@@ -1,5 +1,29 @@
 .bg {
+  &--dark {
+    color: $white;
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    h1, 
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $white;
+    }
+  }
+
   &-gradient-top-blue {
     background: linear-gradient(180deg, rgba(11, 28, 86, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &-blue-leaf {
+    background: url("../img/background/blue-leaf.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
   }
 }

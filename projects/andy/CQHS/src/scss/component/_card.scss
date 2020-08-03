@@ -1,0 +1,12 @@
+.card {
+  &--b-orange {
+    &:after {
+      content: "";
+      background: $orange;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: $size-1;
+    }
+  }
+}
