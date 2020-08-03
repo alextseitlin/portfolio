@@ -2,23 +2,26 @@
   &__block {
     padding: $size-4;
     text-align: center;
+    border-radius: $border-radius;
 
     &-icon {
       position: relative;
+      min-width: 100%;
+      min-height: 111px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      margin-bottom: $size-3;
+      transform: scale(.9);
 
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        height: 20px;
-        width: 5px;
-        -webkit-mask: url("../img/icon/water-teatment.svg") no-repeat 50% 50%;
-        mask: url("../img/icon/water-teatment.svg") no-repeat 50% 50%;
-        -webkit-mask-size: cover;
-        mask-size: cover;
-        background-color: $primary;
+      @include media-breakpoint-down(sm) {
+        transform: scale(.7);
+      }
+    }
+
+    &:hover {
+      .c-feature-blocks__block-icon {
+        filter: invert(35%) sepia(51%) saturate(6369%) hue-rotate(350deg) brightness(89%) contrast(86%);
+        dsgadg: sdfa;
       }
     }
 
