@@ -166,7 +166,11 @@ $spacers: map-merge(
     13: ($spacer * 6),
     14: ($spacer * 6.5),
     15: ($spacer * 7),
-    16: ($spacer * 7.5)
+    16: ($spacer * 7.5),
+    17: ($spacer * 8),
+    18: ($spacer * 8.5),
+    19: ($spacer * 9),
+    20: ($spacer * 9.5)
   ),
   $spacers
 );
@@ -187,6 +191,10 @@ $size-13: ($spacer * 6);
 $size-14: ($spacer * 6.5);
 $size-15: ($spacer * 7);
 $size-16: ($spacer * 7.5);
+$size-17: ($spacer * 8.5);
+$size-18: ($spacer * 9);
+$size-19: ($spacer * 9.5);
+$size-20: ($spacer * 10);
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;

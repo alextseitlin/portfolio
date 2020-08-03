@@ -3,6 +3,7 @@
     padding: $size-4;
     text-align: center;
     border-radius: $border-radius;
+    display: block;
 
     &-icon {
       position: relative;
@@ -19,9 +20,9 @@
     }
 
     &:hover {
+      text-decoration: none;
       .c-feature-blocks__block-icon {
         filter: invert(35%) sepia(51%) saturate(6369%) hue-rotate(350deg) brightness(89%) contrast(86%);
-        dsgadg: sdfa;
       }
     }
 

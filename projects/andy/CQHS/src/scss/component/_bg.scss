@@ -7,13 +7,18 @@
     .h3,
     .h4,
     .h5,
-    h1, 
+    h1,
     h2,
     h3,
     h4,
     h5 {
       color: $white;
     }
+  }
+
+  &-gradient-light {
+    background: linear-gradient(180deg, rgba(233, 238, 245, 1) 0%, rgba(0, 0, 0, 0) 100%);
+// sdfadf:asdgag;
   }
 
   &-gradient-top-blue {

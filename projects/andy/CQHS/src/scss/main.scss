@@ -20,3 +20,9 @@
   color: $red;
   font-weight: $font-weight-bold;
 }
+ 
+.go-under-cover {
+  margin-top: - $size-19;
+  padding-top: $size-9;
+  z-index: -1;
+}

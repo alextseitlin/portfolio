@@ -1,9 +1,15 @@
 .cover-hero {
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-  padding-top: $size-4;
-  padding-bottom: $size-6;
+position: relative;
+z-index: 2;
+
+  &__hero {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    padding-top: $size-4;
+    padding-bottom: $size-6;
+  }
+
 
   &__content {
     display: flex;
