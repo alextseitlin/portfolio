@@ -10721,7 +10721,7 @@ a.text-gray:hover, a.text-gray:focus {
     color: #fff; }
   .form-control-xl {
     height: 80px;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     font-size: 1.5rem; }
 
 [type="radio"]:checked,
