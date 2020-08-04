@@ -10866,12 +10866,16 @@ footer {
     flex-direction: column; }
     .cover-hero--small .cover-hero__content {
       min-height: 40vh; }
+    .cover-hero--xsmall .cover-hero__content {
+      min-height: 20vh; }
     .cover-hero__content-title {
       font-weight: 300;
       margin-bottom: 1.5rem;
       color: #fff; }
       .cover-hero__content-title b {
         font-weight: 500; }
+      .bg--light .cover-hero__content-title {
+        color: #000; }
     .cover-hero__content-lead {
       margin-bottom: 1.5rem; }
 
@@ -10923,3 +10927,9 @@ footer {
   margin-top: -9.5rem;
   padding-top: 4rem;
   z-index: -1; }
+
+.go-above-cover {
+  margin-top: -9.5rem;
+  padding-top: 4rem;
+  z-index: 10;
+  position: relative; }

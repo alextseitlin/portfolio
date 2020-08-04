@@ -26,3 +26,10 @@
   padding-top: $size-9;
   z-index: -1;
 }
+
+.go-above-cover {
+  margin-top: - $size-19;
+  padding-top: $size-9;
+  z-index: 10;
+  position: relative;
+}

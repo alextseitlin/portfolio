@@ -20,6 +20,9 @@
     .cover-hero--small & {
       min-height: 40vh;
     }
+    .cover-hero--xsmall & {
+      min-height: 20vh;
+    }
 
     &-title {
       @extend .display-4;
@@ -30,6 +33,11 @@
 
       b {
         font-weight: 500;
+      }
+
+      .bg--light & {
+        color: $black;
+
       }
     }
 
