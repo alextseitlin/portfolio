@@ -10937,6 +10937,21 @@ footer {
     right: 0;
     z-index: -1; }
 
+.swiper-pagination-bullet {
+  border-radius: initial;
+  width: 35px;
+  height: 6px;
+  left: 703px;
+  top: 3190px;
+  background: #DAD9D9;
+  opacity: 1; }
+  .swiper-pagination-bullet-active {
+    width: 36px;
+    height: 6px;
+    left: 624px;
+    top: 3190px;
+    background: #D53D27; }
+
 .link-secondary {
   color: #D53D27;
   font-weight: 700; }
