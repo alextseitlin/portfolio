@@ -9,8 +9,12 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assest/css/main.css">
 
-
-
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRd3IAnf-ZGwdaqaFCoXry60W4m-lb0ss&callback=initMap&libraries=&v=weekly"
+        defer
+      ></script>
+<script src="assest/js/map.js"></script>
   <title>Main</title>
 </head>
 
@@ -352,11 +356,11 @@
     <section class="">
       <!-- <img class="w-100" src="assest/img/map.jpg" alt=""> -->
 
-      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRd3IAnf-ZGwdaqaFCoXry60W4m-lb0ss
+      <!-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRd3IAnf-ZGwdaqaFCoXry60W4m-lb0ss
           &q=Space+Needle,Seattle+WA" allowfullscreen>
-      </iframe>
+      </iframe> -->
 
-    
+    <div id="map" style="height: 400px; width:auto;"></div>
 
 
     </section>

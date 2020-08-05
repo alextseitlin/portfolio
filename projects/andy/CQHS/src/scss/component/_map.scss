@@ -1,0 +1,15 @@
+.gm-style-iw.gm-style-iw-c {
+
+  &:after {
+    background: none !important;
+    box-shadow: -2px 2px 2px 0 rgba(178,178,178,.4);
+    content: url("../img/icon/map-bubble-toung.svg");
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    width: 15px;
+  }
+
+}
