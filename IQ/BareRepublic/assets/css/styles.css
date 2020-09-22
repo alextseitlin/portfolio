@@ -1,0 +1,850 @@
+/*!
+ * Bootstrap Grid v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px; } }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%; }
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+@media (min-width: 576px) {
+  .col-sm-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+  .col-sm-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%; }
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-sm-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+  .col-sm-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+  .col-sm-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%; }
+  .col-sm-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+/*# sourceMappingURL=bootstrap-grid.css.map */
+@font-face {
+  font-family: dinpro-bold;
+  src: url(assets/font/DINPro/DINPro-Bold.otf);
+  font-weight: bold; }
+
+@font-face {
+  font-family: dinpro;
+  src: url(assets/font/DINPro/DINPro.otf); }
+
+.title,
+h1,
+h1.title,
+h2,
+h2.title,
+h3,
+h3.title,
+h4,
+h4.title,
+h5,
+h5.title {
+  font-family: dinpro-bold, sans-serif;
+  color: #4c4f56;
+  margin-top: 0;
+  z-index: 9; }
+
+.aboutSection::before {
+  content: "";
+  background-image: url("assets/img/about.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -15; }
+
+.aboutSection .title {
+  text-align: left;
+  color: #4c4f56;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #124327; }
+
+.aboutSection .subtitle {
+  color: #4c4f56; }
+
+.aboutSection .message {
+  background: white;
+  -webkit-box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.15); }
+  .aboutSection .message-body {
+    padding: 1.5rem; }
+
+.aboutSection .applyBox .title {
+  text-align: center; }
+
+.icon-yellow {
+  color: #0080BB; }
+
+.icon-lg {
+  font-size: 2em;
+  margin-top: -7px !important; }
+
+.MemberJoin .applySection .left .title {
+  color: #4c4f56;
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px; }
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: dinpro, sans-serif;
+  font-weight: 400; }
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  /* font-family: sans-serif; */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+@-ms-viewport {
+  width: device-width; }
+
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  background-color: #fff;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum'; }
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects; }
+
+a:hover {
+  color: #40a9ff; }
+
+a:active {
+  color: #096dd9; }
+
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0; }
+
+a[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+  pointer-events: none; }
+
+.MemberJoin .headerSection .title {
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #1a1818; }
+
+.MemberJoin .aboutSection > .title,
+.MemberJoin .fbSection .title {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a1818; }
+
+.MemberJoin .benefitsSection .title {
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #1a1818; }
+
+.MemberJoin .aboutSection > .left > .subtitle,
+.MemberJoin .headerSection .subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a1818; }
+
+.MemberJoin .benefitsSection .left .listItem .header {
+  font-family: dinpro-bold, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  letter-spacing: 0.2px;
+  color: #4c4f56; }
+
+.MemberJoin .aboutSection .applyBox .subtitle,
+.MemberJoin .aboutSection .applyBox .title,
+.MemberJoin .aboutSection > .left > .description,
+.MemberJoin .applySection .left .description,
+.MemberJoin .benefitsSection .description,
+.MemberJoin .benefitsSection .left .listItem .itemText,
+.MemberJoin .benefitsSection .right .listItem .itemText,
+.MemberJoin .fbSection .description {
+  /* font-family: "proxima-nova", sans-serif; */
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  color: #4c4f56; }
+
+.MemberJoin .copyrightSection {
+  /* font-family: "proxima-nova", sans-serif; */
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.3px;
+  color: white;
+  background: #124327;
+  text-align: center;
+  padding: 18px 25px; }
+
+.MemberJoin {
+  height: 100%;
+  background-color: white; }
+
+.MemberJoin .headerSection {
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 800px; }
+
+.MemberJoin .headerSection {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 60px 80px;
+  background-color: #FBE343;
+  z-index: 1; }
+
+.MemberJoin .headerSection::before {
+  content: "";
+  background-image: url("assets/img/hero.jpg");
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.MemberJoin .headerSection .btn {
+  font-family: dinpro-bold, sans-serif;
+  height: 60px;
+  min-width: 234px;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 0;
+  font-size: 18px; }
+  .MemberJoin .headerSection .btn .label {
+    margin-top: -4px; }
+
+.MemberJoin .headerSection .btn:hover {
+  background: #006fa2; }
+
+.MemberJoin .headerSection .title {
+  margin-bottom: 30px; }
+
+.MemberJoin .headerSection .subtitle {
+  margin-bottom: 40px;
+  font-family: dinpro-bold, sans-serif; }
+
+.MemberJoin .headerSection .logo {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 32px;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); }
+
+@media only screen and (max-width: 600px) {
+  .MemberJoin .headerSection {
+    min-height: 600px;
+    padding: 50px 10px;
+    background-image: url(); }
+  .MemberJoin .headerSection .title {
+    font-size: 48px; }
+  .MemberJoin .headerSection .subtitle {
+    font-size: 26px; }
+  .MemberJoin .headerSection .logo {
+    display: block; } }
+
+.MemberJoin .aboutSection {
+  position: relative;
+  text-align: center;
+  padding: 120px 80px;
+  /* background-color: white; */
+  /* background-image: url(https://i.imgur.com/LA92ksd.jpg); */
+  background-size: cover;
+  background-position: center 90%;
+  background-repeat: no-repeat;
+  z-index: 1; }
+
+.MemberJoin .aboutSection .left {
+  margin-right: auto;
+  max-width: 500px;
+  text-align: left; }
+
+.MemberJoin .aboutSection .applyBox {
+  padding: 40px 20px;
+  /* border-radius: 6px; */
+  text-align: center;
+  /* box-shadow: 0px 16px 34px rgba(48, 53, 57, 0.25); */ }
+
+.MemberJoin .aboutSection .applyBox .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px; }
+
+.MemberJoin .aboutSection .applyBox .subtitle {
+  color: white;
+  margin-bottom: 14px; }
+
+.MemberJoin .aboutSection .applyBox .btn {
+  text-transform: uppercase;
+  background: white;
+  color: #0080BB;
+  border-radius: 0 !important;
+  height: 44px;
+  min-width: 177px;
+  font-size: 16px;
+  margin-top: 20px; }
+
+.MemberJoin .aboutSection > .title {
+  margin-bottom: 120px;
+  margin-top: 0;
+  color: #4c4f56; }
+
+.MemberJoin .aboutSection > .left > .subtitle {
+  margin-bottom: 40px;
+  color: #2e426d; }
+
+.MemberJoin .aboutSection > .left > .description {
+  margin-bottom: 30px; }
+
+@media only screen and (max-width: 600px) {
+  .MemberJoin .aboutSection {
+    background-image: none;
+    text-align: left;
+    padding: 50px 25px; }
+  .MemberJoin .aboutSection > .title {
+    margin-bottom: 24px; }
+  .MemberJoin .aboutSection .title {
+    font-size: 30px; } }
+
+.MemberJoin .benefitsSection {
+  /* background: #2e426d; */
+  min-height: 400px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row; }
+
+.MemberJoin .benefitsSection .title {
+  margin-bottom: 20px; }
+
+.MemberJoin .benefitsSection .description {
+  font-size: 18px; }
+
+.MemberJoin .benefitsSection .left {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 60px 80px;
+  background-color: #0080BB;
+  z-index: 1; }
+
+@media only screen and (min-width: 576px) {
+  .MemberJoin .benefitsSection .left .block-wrapper,
+  .MemberJoin .benefitsSection .right .block-wrapper {
+    max-width: 540px;
+    margin: auto; } }
+
+@media only screen and (min-width: 768px) {
+  .MemberJoin .benefitsSection .left .block-wrapper,
+  .MemberJoin .benefitsSection .right .block-wrapper {
+    max-width: 720px;
+    margin: auto; } }
+
+.MemberJoin .benefitsSection .left::before {
+  content: "";
+  background-image: url("assets/img/left.jpg");
+  opacity: 0.2;
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.MemberJoin .benefitsSection .left .description,
+.MemberJoin .benefitsSection .left .title {
+  color: white; }
+
+.MemberJoin .benefitsSection .left .description {
+  margin-bottom: 50px; }
+
+.MemberJoin .benefitsSection .left .listItem {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin-bottom: 30px; }
+
+.MemberJoin .benefitsSection .left .listItem .icon {
+  padding-right: 20px;
+  color: white; }
+
+.MemberJoin .benefitsSection .left .listItem .icon * {
+  fill: #7fd4f4 !important; }
+
+.MemberJoin .benefitsSection .left .listItem .icon,
+.MemberJoin .benefitsSection .right .listItem .icon {
+  margin-top: 5px; }
+
+.MemberJoin .benefitsSection .left .listItem .text {
+  -webkit-box-flex: 1;
+  flex: 1; }
+
+.MemberJoin .benefitsSection .left .listItem .header {
+  color: #afe1eb;
+  margin-bottom: 8px; }
+
+.MemberJoin .benefitsSection .left .listItem .itemText {
+  color: white;
+  margin-bottom: 15px; }
+
+.MemberJoin .benefitsSection .right {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 60px 80px;
+  background-color: #FFFFFF;
+  z-index: 1; }
+
+.MemberJoin .benefitsSection .right::before {
+  content: "";
+  background-image: url("assets/img/right.jpg");
+  opacity: 0.2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.MemberJoin .benefitsSection .right .description {
+  margin-bottom: 50px; }
+
+.MemberJoin .benefitsSection .right .listItem {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin-bottom: 20px; }
+
+.MemberJoin .benefitsSection .right .listItem .icon {
+  overflow: hidden;
+  margin-right: 10px;
+  margin-top: 3px;
+  position: relative;
+  color: #0080BB; }
+
+.MemberJoin .benefitsSection .right .listItem .itemText {
+  -webkit-box-flex: 1;
+  flex: 1;
+  margin-bottom: 15px;
+  color: #4c4f56; }
+
+@media only screen and (max-width: 900px) {
+  .MemberJoin .benefitsSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .MemberJoin .benefitsSection .title {
+    font-size: 34px; }
+  /* .MemberJoin .benefitsSection .left {
+      background-image: url(https://i.imgur.com/kagvQBZ.jpg);
+    }
+
+    .MemberJoin .benefitsSection .right {
+      background-image: url(https://i.imgur.com/0b2UneB.jpg);
+    } */
+  .MemberJoin .benefitsSection .left,
+  .MemberJoin .benefitsSection .right {
+    padding: 50px 25px; } }
+
+.MemberJoin .applySection {
+  background: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.MemberJoin .applySection .left {
+  -webkit-box-flex: 1;
+  flex: 1; }
+
+.MemberJoin .applySection .left > * {
+  padding-left: 80px; }
+
+.MemberJoin .applySection .left .description {
+  margin-bottom: 40px; }
+
+.MemberJoin .applySection .left .img {
+  width: 100%; }
+
+.MemberJoin .applySection .right {
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-align: center; }
+
+.MemberJoin .applySection .right > * {
+  max-width: 400px;
+  margin: auto; }
+
+@media only screen and (max-width: 900px) {
+  .MemberJoin .applySection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 50px 25px; }
+  .MemberJoin .applySection .left > * {
+    padding-left: 0; }
+  .MemberJoin .applySection .left .img {
+    display: none; }
+  .MemberJoin .applySection .right {
+    margin-top: 32px; }
+  .MemberJoin .applySection .title {
+    text-align: center; } }
+
+.MemberJoin .applySection .title {
+  font-size: 34px; }
+
+.MemberJoin .fbSection {
+  display: none;
+  background: #2e426d;
+  padding: 120px 25px;
+  text-align: center; }
+
+.MemberJoin .fbSection .content {
+  max-width: 800px;
+  display: inline-block; }
+
+.MemberJoin .fbSection .title {
+  color: white;
+  margin-bottom: 40px; }
+
+.MemberJoin .fbSection .title .icon {
+  margin-right: 16px; }
+
+.MemberJoin .fbSection .title .icon * {
+  fill: white !important; }
+
+.MemberJoin .fbSection .description {
+  color: white;
+  margin-bottom: 40px; }
+
+@media only screen and (max-width: 800px) {
+  .MemberJoin .fbSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .MemberJoin .fbSection .title {
+    font-size: 34px;
+    margin-bottom: 25px; }
+  .MemberJoin .fbSection .title .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; }
+  .MemberJoin .fbSection .description {
+    margin-bottom: 25px; } }
+
+.Button {
+  position: relative;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0;
+  transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0; }
+
+.Button:hover.primary {
+  background-color: #0080BB; }
+
+.Button:active.primary {
+  background-color: #0080BB; }
+
+.Button.primary {
+  color: #4c4f56;
+  background-color: #0080BB;
+  border: none; }
+
+.Button.round {
+  border-radius: 100px; }
+
+.Button .label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600; }
+
+.SvgIcon {
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: currentColor;
+  fill: currentColor; }
+
+.w-100 {
+  width: 100%; }
+
+.m-auto {
+  margin: auto; }
+
+.mt-3 {
+  margin-top: 1.5rem; }
+
+.fa-drop:before {
+  content: url("https://storage.googleapis.com/aspirex-program-onboarding/godsquad/drop--black.png");
+  transform: scale(0.4);
+  display: block;
+  margin-top: -3px;
+  margin-left: -8px; }
