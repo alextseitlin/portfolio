@@ -4,7 +4,6 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar; }
@@ -169,6 +168,15 @@ html {
     max-width: 100%; } }
 
 /*# sourceMappingURL=bootstrap-grid.css.map */
+@font-face {
+  font-family: swissBold;
+  src: url(assets/font/SwissBTBla.otf);
+  font-weight: bold; }
+
+@font-face {
+  font-family: swiss;
+  src: url(assets/font/SwissBTBol.otf); }
+
 .title,
 h1,
 h1.title,
@@ -180,7 +188,7 @@ h4,
 h4.title,
 h5,
 h5.title {
-  font-family: quicksand, sans-serif;
+  font-family: swissBold, sans-serif;
   color: #4c4f56;
   margin-top: 0;
   z-index: 9; }
@@ -224,7 +232,7 @@ h5.title {
   text-align: center; }
 
 .icon-yellow {
-  color: #588D32; }
+  color: #2DCCD3; }
 
 .icon-lg {
   font-size: 2em;
@@ -244,7 +252,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: swiss, sans-serif;
   font-weight: 400; }
 
 input::-ms-clear,
@@ -342,7 +350,7 @@ a[disabled] {
   color: #1a1818; }
 
 .MemberJoin .benefitsSection .left .listItem .header {
-  font-family: quicksand, sans-serif;
+  font-family: swissBold, sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
@@ -422,7 +430,7 @@ a[disabled] {
   z-index: -1; }
 
 .MemberJoin .headerSection .btn {
-  font-family: quicksand, sans-serif;
+  font-family: swissBold, sans-serif;
   height: 60px;
   min-width: 234px;
   font-size: 18px;
@@ -434,14 +442,14 @@ a[disabled] {
     margin-top: -4px; }
 
 .MemberJoin .headerSection .btn:hover {
-  background: #4c7a2b; }
+  background: #28b8bf; }
 
 .MemberJoin .headerSection .title {
   margin-bottom: 30px; }
 
 .MemberJoin .headerSection .subtitle {
   margin-bottom: 40px;
-  font-family: quicksand, sans-serif; }
+  font-family: swissBold, sans-serif; }
 
 .MemberJoin .headerSection .subtitle,
 .MemberJoin .headerSection .title {
@@ -502,7 +510,7 @@ a[disabled] {
 .MemberJoin .aboutSection .applyBox .btn {
   text-transform: uppercase;
   background: white;
-  color: #588D32;
+  color: #2DCCD3;
   border-radius: 0 !important;
   height: 44px;
   min-width: 177px;
@@ -656,7 +664,7 @@ a[disabled] {
   margin-right: 10px;
   margin-top: 3px;
   position: relative;
-  color: #588D32; }
+  color: #2DCCD3; }
 
 .MemberJoin .benefitsSection .right .listItem .itemText {
   -webkit-box-flex: 1;
@@ -798,14 +806,14 @@ a[disabled] {
   transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1) 0; }
 
 .Button:hover.primary {
-  background-color: #588D32; }
+  background-color: #2DCCD3; }
 
 .Button:active.primary {
-  background-color: #588D32; }
+  background-color: #2DCCD3; }
 
 .Button.primary {
   color: #4c4f56;
-  background-color: #588D32;
+  background-color: #2DCCD3;
   border: none; }
 
 .Button.round {
