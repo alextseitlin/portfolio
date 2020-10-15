@@ -1,0 +1,64 @@
+.hero {
+  background-image: url('assets/img/PCB_two_women.jpg');
+  width: 100%;
+  min-height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  display: flex;
+  align-items: flex-end;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__container {
+    background-color: #fff5ece8;
+    width: 100%;
+    padding: 50px;
+
+  }
+
+  &__message {
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    &-title {
+      text-align: center;
+      color: #D5978E;
+      font-size: 2.75rem;
+      text-transform: uppercase;
+      margin: 0;
+      letter-spacing: .2rem;
+      font-weight: $header-weight;
+    }
+
+    &-lead {
+      text-align: center;
+      margin-top: 0;
+      color: #2e2e2e;
+      font-size: 1rem;
+      letter-spacing: .1rem;
+    }
+
+    &-action {
+      color: #fff;
+      background: #5C95A1;
+      height: 40px;
+      font-size: 1rem;
+      padding: 12px 18px;
+      border-radius: $border-radius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: 700;
+
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url('assets/img/PCB_formula_texture.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  h2,
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    color: #9D8076;
+    line-height: 2.75rem;
+  }
+
+  p {
+    color: #2e2e2e;
+  }
+}

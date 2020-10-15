@@ -1,0 +1,72 @@
+.benefit {
+  text-align: center;
+
+  &__left,
+  &__right {
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      background: #FFF5EC;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0.9;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: #D5978E; 
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    margin-bottom: 25px;
+  }
+
+ 
+
+  .list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 25px;
+    }
+
+    &__title {
+      color: #5C95A1;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      font-weight: 700;
+    } 
+  
+    &__description {
+      color: #2e2e2e;
+    }
+  }
+
+  &__left {
+    background: url('assets/img/PCB_formula_texture_left.jpg');
+
+
+    p {
+      color: #2e2e2e;
+    }
+
+ 
+  }
+
+  &__right {
+    background: url('assets/img/PCB_formula_texture_right.jpg');
+  }
+}
